@@ -1,4 +1,4 @@
-package com.javanauta.usuario.business.dto.request;
+package com.javanauta.usuario.business.dto;
 
 import lombok.*;
 
@@ -9,11 +9,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UsuarioRequestDTO {
+public class UsuarioDTO {
 
     private String nome;
     private String email;
     private String senha;
-    private List<EnderecoRequestDTO> enderecos;
-    private List<TelefoneRequestDTO> telefones;
+    private List<EnderecoDTO> enderecos;
+    private List<TelefoneDTO> telefones;
 }

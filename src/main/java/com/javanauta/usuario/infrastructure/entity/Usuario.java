@@ -18,13 +18,13 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(table = "nome", length = 100)
+    @Column(name = "nome", length = 100)
     private String nome;
 
-    @Column(table = "email", length = 100)
+    @Column(name = "email", length = 100)
     private String email;
 
-    @Column(table = "senha", length = 100)
+    @Column(name = "senha", length = 100)
     private String senha;
 
     @OneToMany(cascade = CascadeType.ALL)
