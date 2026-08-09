@@ -2,7 +2,7 @@ package com.javanauta.usuario.controller;
 
 import com.javanauta.usuario.business.UsuarioService;
 import com.javanauta.usuario.business.converter.UsuarioConverter;
-import com.javanauta.usuario.business.dto.request.UsuarioRequestDTO;
+import com.javanauta.usuario.business.dto.UsuarioDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,7 +20,7 @@ public class UsuarioController {
     private final UsuarioConverter usuarioConverter;
 
     @PostMapping
-    public ResponseEntity<UsuarioRequestDTO> salvaUsuario(@RequestBody UsuarioRequestDTO usuarioDTO) {
+    public ResponseEntity<UsuarioDTO> salvaUsuario(@RequestBody UsuarioDTO usuarioDTO) {
         return ResponseEntity.ok(usuarioService.salvaUsuario(usuarioDTO));
     }
 }

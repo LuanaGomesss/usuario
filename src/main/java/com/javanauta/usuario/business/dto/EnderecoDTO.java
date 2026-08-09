@@ -1,4 +1,4 @@
-package com.javanauta.usuario.business.dto.request;
+package com.javanauta.usuario.business.dto;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class EnderecoRequestDTO {
+public class EnderecoDTO {
 
     private String rua;
     private Long numero;
